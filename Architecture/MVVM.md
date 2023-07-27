@@ -17,9 +17,9 @@
 | 개념 | 설명 | 
 | -------- | -------- | 
 | Model     | 애플리케이션에서 데이터를 저장하고 처리하는 계층 | 
-| ViewModel     | 애플리케이션에서 `View`와 `Model`사이에 존재하며 서로를 중재하는 역할을 수행하는 계층 <br/> ▪️`View` - `ViewModel`: 사용자와 뷰의 상호작용(클릭, 키보드 동작 등)을 수신한 후, 이에 대한 처리를 데이터 바인딩을 통해 `View`와 `ViewModel`을 연결한다 <br/> ▪️`Model` - `ViewModel`: 데이터를 가져오거나 갱신한 후, `ViewModel`에서 이에 대한 로직을 처리한다 |
+| ViewModel     | 애플리케이션에서 `View`와 `Model`사이에 존재하며 서로를 중재하는 역할을 수행하는 계층 <br/> 1️⃣ `View` - `ViewModel`: 사용자와 뷰의 상호작용(클릭, 키보드 동작 등)을 수신한 후, 이에 대한 처리를 데이터 바인딩을 통해 `View`와 `ViewModel`을 연결한다 <br/> 2️⃣ `Model` - `ViewModel`: 데이터를 가져오거나 갱신한 후, `ViewModel`에서 이에 대한 로직을 처리한다 |
 | View     | 애플리케이션에서 사용자가 직접 보는 화면(UI)을 담당하는 계층 |
-| Data Binding     | `View`와 `ViewModel`을 연결하는 프로세스 <br/> `Model`과 UI요소 간의 싱크를 맞춰주는 것 <br/> 데이터 바인딩 방법: <br/> ▪️ KVO <br/> ▪️ Delegation <br/> ▪️ Functional Reactive Programming <br/> ▪️ Property Observer |
+| Data Binding     | `View`와 `ViewModel`을 연결하는 프로세스 <br/> `Model`과 UI요소 간의 싱크를 맞춰주는 것 <br/> 데이터 바인딩 방법: <br/> 1️⃣ KVO <br/> 2️⃣ Delegation <br/> 3️⃣ Functional Reactive Programming <br/> 4️⃣ Property Observer |
 | Business Logic     | 도메인에 맞게 데이터를 변환하고 가져오는 과정 <br/> `View`에 넘겨줄 데이터가 만들어지고 가공되는 과정 |
 
 <br/>
@@ -44,7 +44,7 @@
 
 | 장점 | 단점 |
 | -------- | -------- |
-|▪️`View`와 `Model`이 서로를 전혀 알지 못하기 때문에 독립성을 유지할 수 있음 <br/> ▪️ `View`와 `ViewModel`을 바인딩하기 때문에 코드의 양이 줄어듦 <br/> ▪️ `ViewModel`에 UI 관련 코드가 없고 `Controller`와의 의존성이 없기 때문에 UnitTest를 하기에 좋음 | ▪️간단한 UI에서 오히려 `ViewModel`을 설계하는 어려움이 있음 <br/>▪️ Data Binding이 필수적으로 요구됨 <br/>▪️표준화된 틀이 존재하지 않아 사람마다 이해가 다름 |
+|1️⃣ `View`와 `Model`이 서로를 전혀 알지 못하기 때문에 독립성을 유지할 수 있음 <br/> 2️⃣ `View`와 `ViewModel`을 바인딩하기 때문에 코드의 양이 줄어듦 <br/> 3️⃣ `ViewModel`에 UI 관련 코드가 없고 `Controller`와의 의존성이 없기 때문에 UnitTest를 하기에 좋음 | 1️⃣ 간단한 UI에서 오히려 `ViewModel`을 설계하는 어려움이 있음 <br/> 2️⃣ Data Binding이 필수적으로 요구됨 <br/> 3️⃣ 표준화된 틀이 존재하지 않아 사람마다 이해가 다름 |
 
 ![image](https://github.com/Rhode-park/today-i-learned/assets/116149325/ba74690e-eef6-49e0-9b7e-38cee903864c)
 
