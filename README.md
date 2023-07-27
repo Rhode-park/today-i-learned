@@ -12,6 +12,8 @@ Rhode의 하루하루 공부 기록
 ## UIKit
 
 ## Architecture
+ - [MVVM](https://github.com/Rhode-park/today-i-learned/blob/main/Architecture/MVVM.md)
+
 
 ## Combine
 
